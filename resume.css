@@ -1,0 +1,119 @@
+/* Global Styles */
+
+header{
+    background-color: rgb(131, 225, 225);
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E5E7E7;
+    color: #043442;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #3d33f4;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #043442;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #043442;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  /* Navigation Styles */
+  .navbar {
+    background-color: #043442;
+    padding: 10px 0;
+  }
+  
+  .navbar a {
+    margin-right: 15px;
+    color: #E5E7E7;
+  }
+  
+  /* Chart Styles */
+  #skillsChart {
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #043442;
+    color: #E5E7E7;
+  }
+  
+  /* Additional Interactions */
+  #ccp,
+  #quest {
+    display: inline-block;
+    height: 100px;
+    margin-top: 1%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #ccp:hover,
+  #quest:hover {
+    transform: scale(1.1);
+  }
+
+  /* Media queries for responsive design */
+@media screen and (max-width: 1200px) {
+  /* Styles for screens up to 1200px wide */
+  .container {
+    max-width: 960px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* Styles for screens up to 992px wide */
+  .container {
+    max-width: 768px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Styles for screens up to 768px wide */
+  .container {
+    max-width: 480px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Styles for screens up to 480px wide */
+  h1 {
+    font-size: 24px;
+  }
+}
+  

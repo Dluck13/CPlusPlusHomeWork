@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dimitri Luck - Resume</title>
+  <link rel="stylesheet" href="resume.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    #skillsChart {
+      max-width: 800px;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+
+    #ccp,
+    #quest {
+      display: run-in;
+      height: 100px;
+      margin-top: 1%;
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Dimitri Luck</h1>
+    <p>Software Developer</p>
+    <a href="https://github.com/Dluck13">GitHub</a>
+    <div>
+      <img id="ccp"
+        src="cloud.jpg"
+        alt="">
+      <img id="quest"
+        src="quest.jpg"
+        alt="">
+    </div>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p>
+      Having completed an Associate's Degree in Applied Science back in 2019 at Northern Virginia Community College,
+      Dimitri decided to pursue technology instead of biology. From starting at Revature in 2022 and working a 12-month
+      contract with JP Morgan, Dimitri gained valuable experience as a Software Developer. Alongside his full-time work,
+      he has been taking courses at UNCPembroke, focusing on Information Technology with Java Development. As a senior
+      with 30 credits left until degree completion, Dimitri is dedicated to furthering his knowledge and skills in
+      software development. With a strong work ethic, adaptability, effective communication, and writing skills, Dimitri
+      strives to produce quality work and continuously learn in the field of software development.
+    </p>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <ul>
+      <li>AWS Cloud Practitioner, AWS <a
+          href="https://www.credly.com/badges/a86065f5-5faf-4b3f-8391-f45b9873bf50/public_url">Badge</a></li>
+      <li>Cloud Quest Builder - Cloud Practitioner <a
+          href="https://www.credly.com/badges/5c20f2d7-f941-4048-8f26-2e6406c70875/public_url">Badge</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p>Associate's Degree in Applied Science from Northern Virginia Community College, Dec 2019</p>
+  </section>
+
+  <section>
+    <h2>Technical Skill Summary</h2>
+    <canvas id="skillsChart"></canvas>
+    <script>
+      var ctx = document.getElementById('skillsChart').getContext('2d');
+      var chart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: [
+            'Web Technologies - HTML, CSS, Angular, TypeScript, Node, JavaScript, BootStrap, Jenkins, AWS',
+            'Java - Maven, Junit, Javalin, Spring Boot, Java, Hibernate',
+            'Database - PostgreSQL, Pg Admin4, JDBC, Java, Docker, Oracle Sql Developer',
+            'DevOps - GitHub, AWS, SpringBoot, Maven, Jenkins, EC2',
+            'Server Technologies - JDBC, Spring Data, PostgreSql, SpringMVC, Javalin'
+          ],
+          datasets: [{
+            label: 'Years of Experience',
+            data: [2, 2, 2, 2, 2], // Replace with your own data
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.8)',
+              'rgba(54, 162, 235, 0.8)',
+              'rgba(255, 206, 86, 0.8)',
+              'rgba(75, 192, 192, 0.8)',
+              'rgba(153, 102, 255, 0.8)'
+            ],
+            borderWidth: 0
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: true,
+          legend: {
+            position: 'right'
+          }
+        }
+      });
+
+    </script>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+
+    <h3>Software Engineer</h3>
+    <p>Revature - Tampa, FL</p>
+    <p>January 2022 to June 2023</p>
+    <p>JP Morgan Chase - Tampa, FL</p>
+    <p>June 2022 to June 2023</p>
+    <ul>
+      <li>Results-oriented and highly skilled Full-Stack Java Developer with a focus on Spring Boot and Angular, seeking
+        to leverage my training and expertise to contribute to the success of JP Morgan Chase. Equipped with
+        comprehensive knowledge in software development methodologies and technologies, including Jenkins builds,
+        microservices creation using AWS and Docker, I am committed to delivering innovative solutions that drive
+        business growth and enhance customer experiences.</li>
+      <li>Successfully completed a rigorous training program focused on full-stack Java development with an emphasis on
+        Spring Boot and Angular frameworks.</li>
+      <li>Acquired in-depth knowledge of Java programming language, utilizing it to design and develop scalable web
+        applications.</li>
+      <li>Demonstrated proficiency in implementing best practices and industry standards to ensure code quality,
+        performance, and security.</li>
+      <li>Collaborated with cross-functional teams, actively participating in Agile development methodologies to deliver
+        projects within tight timelines.</li>
+      <li>Utilized Jenkins to automate build processes, enabling continuous integration and delivery pipelines for
+        efficient software development practices.</li>
+      <li>Gained hands-on experience in creating microservices architecture using AWS and Docker, ensuring scalability
+        and resilience in application deployment.</li>
+      <li>Engaged in regular code reviews, providing feedback to peers and implementing improvements to enhance overall
+        codebase quality.</li>
+    </ul>
+
+    <p>As a Software Engineer on the Statement Utility team at JP Morgan Chase, I have gained extensive experience in
+      developing and maintaining critical applications for statement processing and reporting. Working in a dynamic and
+      fast-paced environment, I have collaborated closely with cross-functional teams to deliver high-quality solutions
+      that ensure accurate and timely generation of financial statements for our clients.</p>
+    <p>Throughout my tenure, I have been responsible for designing and implementing efficient and scalable software
+      solutions, adhering to coding standards and best practices. I have actively participated in the full software
+      development life cycle, from requirements gathering and design to implementation, testing, and deployment.
+      Troubleshooting and debugging software issues has been a significant aspect of my role, enabling me to identify
+      root causes and implement effective solutions to ensure smooth operations.</p>
+    <p>My experience includes working with relational databases, SQL, and data analysis to handle large datasets
+      efficiently. I have utilized my strong programming skills in languages such as Java, C++, or Python to develop
+      robust and reliable software applications. Additionally, I have actively contributed to code reviews and testing
+      processes, ensuring software quality and adherence to industry standards.</p>
+    <p>Being part of the Statement Utility team has provided me with valuable exposure to the financial services domain.
+      It has allowed me to understand the intricacies of statement processing systems and the importance of accuracy,
+      compliance, and security in the financial industry. I have honed my problem-solving abilities and attention to
+      detail, enabling me to address complex challenges effectively.</p>
+    <p>Moreover, my role has emphasized the significance of effective communication and collaboration skills. I have
+      successfully worked with business analysts, quality assurance professionals, and other stakeholders to gather
+      requirements, define technical specifications, and ensure smooth project delivery. I have also remained updated
+      with emerging technologies and industry trends, leveraging innovative ideas to enhance the statement utility
+      systems and drive continuous improvement.</p>
+    <p>Overall, my experience as a Software Engineer on the Statement Utility team has provided me with a strong
+      foundation in software development, a deep understanding of the financial services domain, and the ability to
+      thrive in a fast-paced and challenging environment. I am excited to leverage this experience and contribute to new
+      opportunities where I can utilize my skills and expertise to deliver impactful solutions.</p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <h3>Project 3: Ecommerce Store</h3>
+    <p>Jan 2022 to May 2022</p>
+    <ul>
+      <li>Worked on the front end development as well as the back end development implementing methods for a WishList.
+      </li>
+      <li>Implemented wishlist entities and created components such as the wish-list component and wish-list
+        service/model on the front end.</li>
+      <li>Used Java Persistence API in the backend to communicate with the endpoints in the frontend service layer and
+        the PostgreSQL database.</li>
+      <li>Established foundational code for the frontend using Angular and for the backend using Spring.</li>
+      <li>Maintained code integrity and ensured communication with the database hosted on AWS.</li>
+    </ul>
+    <p>Environment: JUnit, PostgreSQL, Spring Boot, Angular 2+, Java, TypeScript, Spring Framework, DevOps, Spring Data,
+      Selenium, Spring Test, AWS S3, Karma, Jasmine, Jenkins, HTML, CSS, Git, Spring MVC, Spring ORM</p>
+
+    <h3>Expense Reimbursement System (ERS) - Project 2</h3>
+    <p>Jan 2022 to Present</p>
+    <ul>
+      <li>Worked on the front end development as well as the back end development implementing methods for an Employee.
+      </li>
+      <li>Implemented reimbursement and employee entities and created components such as the list-reimbursement
+        component and edit-reimbursement component on the front end.</li>
+      <li>Used Java Persistence API in the backend to communicate with the endpoints in the frontend service layer and
+        the PostgreSQL database.</li>
+      <li>Established foundational code for the frontend using Angular and for the backend using Spring.</li>
+      <li>Maintained code integrity and ensured communication with the database hosted on AWS.</li>
+    </ul>
+    <p>Environment: JUnit, PostgreSQL, Spring Boot, Angular 2+, Java, TypeScript, Spring Framework, DevOps, Spring Data,
+      Selenium, Spring Test, AWS S3, Karma, Jasmine, Jenkins, HTML, CSS, Git, Spring MVC, Spring ORM</p>
+
+    <h3>Expense Reimbursement System (ERS) - Project 1</h3>
+    <p>Jan 2022 to Present</p>
+    <ul>
+      <li>Established Database using PostgreSQL.</li>
+      <li>Integrated database using JDBC.</li>
+      <li>Ensured communication to the database hosted on AWS.</li>
+      <li>Developed frontend elements with Angular, TypeScript, and Bootstrap.</li>
+      <li>Used core Java concepts to develop backend systems.</li>
+    </ul>
+    <p>Environment: Javalin, Angular 2+, Java, TypeScript, Maven, PostgreSQL, Hibernate, JUnit</p>
+  </section>
+</body>
+
+</html>
